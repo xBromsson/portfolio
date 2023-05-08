@@ -12,7 +12,7 @@ h1 {
   margin-right: 75px;
 }
 
-.grid-layout-container {
+.main-layout-container {
   display: grid;
   background-color: rgb(82, 82, 82);
   border: solid;
@@ -35,14 +35,20 @@ h1 {
   background-color: tomato;
 }
 
-.header-container > .logo {
+.logo-container {
   flex-basis: 1;
   flex-grow: 1;
   flex-shrink: 0;
 }
 
+.logo {
+  font-size: large;
+}
+
 .nav-container {
   display: flex;
+  text-align: center;
+  align-items: center;
   gap: 5px;
   flex-basis: 1;
   flex-grow: 2;
@@ -51,7 +57,7 @@ h1 {
 
 .nav-container > a {
   background-color: aquamarine;
-  text-align: right;
+  text-align: center;
   flex-basis: 1;
   flex-grow: 1;
   flex-shrink: 0;

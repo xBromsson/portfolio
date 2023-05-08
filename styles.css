@@ -89,7 +89,36 @@ h1 {
 }
 
 .card {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  overflow: hidden;
   width: 300px;
   height: 250px;
   background-color: antiquewhite;
+}
+
+.card-header {
+  flex-basis: auto;
+  flex-grow: 1;
+  flex-shrink: 0;
+}
+
+.card-body {
+  flex-basis: auto;
+  flex-grow: 1;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+
+a.clickable {
+  text-decoration: none;
+  color: inherit;
+}
+
+button.raised {
+  z-index: 1;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
 }

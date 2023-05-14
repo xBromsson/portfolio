@@ -51,10 +51,19 @@ body {
   background-color: slategray;
   align-items: center;
   justify-content: center;
+  text-decoration: none;
 }
 
 .nav-items > a:hover {
   background-color: gray;
+}
+
+.nav-items > a:link {
+  color: black;
+}
+
+.nav-items > a:visited {
+  color: black;
 }
 
 .main-container {

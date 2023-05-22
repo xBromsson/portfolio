@@ -6,6 +6,35 @@ body {
   margin: 0;
 }
 
+h1,
+h2,
+h3 {
+  margin: 0;
+  padding: 0;
+  line-height: 1.2;
+}
+
+a {
+  line-height: 0;
+  padding: 0;
+  margin: 0;
+}
+
+.card p {
+  font-weight: 500;
+}
+
+.badge {
+  font-size: 13px;
+  padding: 2px 4px 2px 4px;
+  white-space: nowrap;
+  line-height: 25px;
+  border-radius: 3px;
+  font-weight: 500;
+  color: slategray;
+  background-color: rgb(39, 39, 39);
+}
+
 .main-layout-container {
   flex: 1 1 auto;
   max-width: 1440px;
@@ -30,9 +59,11 @@ body {
 }
 
 .logo-container {
-  flex-basis: 1;
-  flex-grow: 1;
-  flex-shrink: auto;
+  height: 50px;
+  padding-left: 25px;
+  display: flex;
+  flex: 1 1 auto;
+  align-items: center;
 }
 
 .logo {
@@ -68,13 +99,21 @@ body {
 
 .main-container {
   grid-area: main;
-  border-radius: 0.5px;
+  padding: 20px;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  text-align: left;
+  padding: 50px 0 50px 0;
 }
 
 .simple-grid {
   display: grid;
-  padding: 10px;
-  grid-template: auto / auto auto auto auto;
+  padding: 0px;
+  grid-template: auto / 25% 25% 25% 25%;
   gap: 5px;
 }
 
@@ -83,21 +122,35 @@ body {
   background-color: slategray;
   border-radius: 5px;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  align-items: left;
   overflow: hidden;
   height: 250px;
+  padding: 15px 15px 15px 15px;
+}
+
+.card-image {
+  flex: 1 1 auto;
+}
+
+.card-header {
+  flex: 1 1 auto;
+}
+
+.card-body {
+  flex: 1 1 auto;
+}
+
+.card-footer {
+  flex: 1 1 auto;
+}
+
+.card-footer a {
+  padding: 0px 10px 0px 10px;
 }
 
 .footer-container {
   grid-area: footer;
   background-color: slategray;
-  border-radius: 0.5px;
-}
-
-h1 {
-  font-size: xx-large;
-  text-align: center;
 }
 
 .hamburger {
@@ -123,13 +176,13 @@ h1 {
 
 @media (max-width: 1024px) {
   .simple-grid {
-    grid-template: auto / auto auto auto;
+    grid-template: auto / 33% 33% 33%;
   }
 }
 
 @media (max-width: 768px) {
   .simple-grid {
-    grid-template: auto / auto auto;
+    grid-template: auto / 50% 50%;
   }
 
   .hamburger {
@@ -156,7 +209,7 @@ h1 {
 
 @media (max-width: 480px) {
   .simple-grid {
-    grid-template: auto / auto;
+    grid-template: auto / 100%;
   }
 
   .hamburger {

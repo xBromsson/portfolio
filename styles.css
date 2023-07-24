@@ -9,6 +9,7 @@ body {
 h1,
 h2,
 h3 {
+  padding-top: 100;
   margin: 0;
   padding: 0;
   line-height: 1.2;
@@ -146,7 +147,7 @@ a {
   align-items: left;
   overflow: hidden;
   height: 250px;
-  padding: 15px 15px 15px 15px;
+  padding: 25px 15px 15px 15px;
 }
 
 .card-image {

@@ -1,45 +1,54 @@
+:root {
+  --blue1: #0c1e2d;
+  --blue2: #163956;
+  --blue3: #20547f;
+  --blue4: #2a6fa9;
+  --blue5: #3689cf;
+
+  --black: #000000;
+  --b1: #0b1528;
+  --b2: #152a51;
+  --b3: #1e3f7b;
+  --b4: #2753a5;
+}
+
 body {
   display: flex;
   justify-content: center;
   font-family: Arial, Helvetica, sans-serif;
-  background-color: rgb(235, 235, 235);
-  margin: 0;
+  background-color: rgb(178, 190, 202);
 }
 
 h1,
 h2,
 h3 {
-  padding-top: 100;
-  margin: 0;
-  padding: 0;
-  line-height: 1.2;
+  margin: 0px;
+  padding: 5px 0px 5px 0px;
+  line-height: 1;
+}
+
+p {
+  padding: 0px;
 }
 
 a {
-  line-height: 0;
-  padding: 0;
-  margin: 0;
+  padding: 0px;
+  margin: 0px;
 }
 
-.card p {
-  font-weight: 500;
-}
-
-.badge {
-  font-size: 13px;
-  padding: 2px 4px 2px 4px;
-  white-space: nowrap;
-  line-height: 25px;
-  border-radius: 3px;
-  font-weight: 500;
-  color: slategray;
-  background-color: rgb(39, 39, 39);
+a.button {
+  padding: 7px 15px 7px 15px;
+  text-decoration: none;
+  background-color: rgb(179, 179, 179);
+  color: #000000;
+  border: none;
+  border-radius: 5px;
 }
 
 .main-layout-container {
-  flex: 1 1 auto;
+  flex: 1;
   max-width: 1440px;
-  height: 100vh;
+  height: 100%;
   display: grid;
   border-radius: 0.5px;
   grid-template-areas:
@@ -51,19 +60,18 @@ a {
 
 .header-container {
   grid-area: header;
-  background-color: slategrey;
-  padding: 0px;
   display: flex;
-  border-radius: 0.5px;
   position: sticky;
   top: 0;
+  background-color: slategray;
+  border-radius: 0.5px;
 }
 
 .logo-container {
   height: 50px;
   padding-left: 25px;
   display: flex;
-  flex: 1 1 auto;
+  flex: 1;
   align-items: center;
 }
 
@@ -73,16 +81,19 @@ a {
 
 .nav-container {
   display: flex;
-  flex: 1 1 auto;
-  align-items: center;
+  flex: 2;
+}
+
+.nav-items {
+  display: flex;
+  justify-content: flex-end;
+  flex: 1;
 }
 
 .nav-items > a {
   display: flex;
-  flex: 1 1 auto;
-  background-color: slategray;
   align-items: center;
-  justify-content: center;
+  padding: 0px 15px 0px 15px;
   text-decoration: none;
 }
 
@@ -100,7 +111,6 @@ a {
 
 .main-container {
   grid-area: main;
-  padding: 20px;
 }
 
 .section-column {
@@ -136,38 +146,97 @@ a {
   display: grid;
   padding: 0px;
   grid-template: auto / 25% 25% 25% 25%;
-  gap: 5px;
+  margin-left: -7px;
+  margin-right: -7px;
 }
 
+/* CARD STYLES */
 .card {
   display: flex;
   background-color: slategray;
   border-radius: 5px;
   flex-direction: column;
-  align-items: left;
   overflow: hidden;
-  height: 250px;
-  padding: 25px 15px 15px 15px;
+  margin: 7px;
 }
 
 .card-image {
-  flex: 1 1 auto;
+  height: 200px;
+}
+
+#etch-a-sketch {
+  background-image: url(./assets/etch-a-sketch-screenshot.PNG);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#rock-paper-scissors {
+  background-image: url(./assets/rock-paper-scissors-screenshot.PNG);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#flex-site {
+  background-image: url(./assets/flex-site-screenshot.PNG);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#calculator {
+  background-image: url(./assets/calculator-screenshot.PNG);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#marley {
+  background-image: url(./assets/game_start.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#planets {
+  background-image: url(./assets/Demo.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#bedtime {
+  background-image: url(./assets/its-story-time-screenshot.PNG);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .card-header {
-  flex: 1 1 auto;
+  padding: 15px 15px 5px 15px;
 }
 
 .card-body {
-  flex: 1 1 auto;
+  padding: 0px 15px 0px 15px;
+}
+
+.badge {
+  font-size: 12px;
+  padding: 2px 4px 2px 4px;
+  white-space: nowrap;
+  line-height: 25px;
+  border-radius: 3px;
+  font-weight: 500;
+  color: slategray;
+  background-color: rgb(39, 39, 39);
 }
 
 .card-footer {
-  flex: 1 1 auto;
-}
-
-.card-footer a {
-  padding: 0px 10px 0px 10px;
+  display: flex;
+  align-items: center;
+  padding: 5px 15px 15px 15px;
+  gap: 10px;
 }
 
 .footer-container {
@@ -183,18 +252,10 @@ a {
   cursor: pointer;
 }
 
-.nav-items {
-  display: flex;
-  flex: 1 1 auto;
-  align-items: stretch;
-  justify-content: center;
-  height: 100%;
-  z-index: 1;
-}
-
+/*
 .nav-items.hidden {
   display: flex;
-}
+} */
 
 @media (max-width: 1024px) {
   .simple-grid {
@@ -207,11 +268,11 @@ a {
     grid-template: auto / 50% 50%;
   }
 
-  .hamburger {
+  /* .hamburger {
     display: block;
-  }
+  } */
 
-  .nav-items {
+  /* .nav-items {
     display: flex;
     align-items: stretch;
     justify-content: left;
@@ -226,7 +287,7 @@ a {
 
   .nav-items.hidden {
     display: none;
-  }
+  } */
 
   .column {
     text-align: left;
@@ -242,13 +303,13 @@ a {
     grid-template: auto / 100%;
   }
 
-  .hamburger {
+  /* .hamburger {
     display: block;
   }
 
   .nav-items.hidden {
     display: none;
-  }
+  } */
 
   .column {
     text-align: left;

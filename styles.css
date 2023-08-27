@@ -12,7 +12,7 @@
   --b4: #2753a5;
 
   --basebg: rgb(31, 41, 49);
-  --base: rgb(32, 38, 44);
+  --base: rgb(22, 28, 32);
   --base1: rgb(45, 54, 61);
   --base2: rgb(62, 79, 95);
 
@@ -164,10 +164,11 @@ a.button {
 }
 
 .section-hero {
+  background-color: var(--base);
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 60vh;
+  height: 75vh;
   gap: 70px;
 }
 
@@ -298,6 +299,7 @@ a.button {
 .footer-container {
   grid-area: footer;
   background-color: var(--base2);
+  height: 5vh;
 }
 
 .hamburger {

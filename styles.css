@@ -203,7 +203,7 @@ a.button {
 }
 
 #planets {
-  background-image: url(./assets/Demo.png);
+  background-image: url(./assets/planets.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;

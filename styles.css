@@ -109,6 +109,9 @@ a.button {
   border-radius: 0.5px;
 }
 
+.status {
+}
+
 .logo-container {
   height: 50px;
   padding-left: 25px;
@@ -331,6 +334,9 @@ a.button {
   .simple-grid {
     grid-template: auto / 50% 50%;
   }
+  .hero-right {
+    flex: 1;
+  }
 }
 
 @media (max-width: 768px) {
@@ -350,10 +356,11 @@ a.button {
     justify-content: center;
     height: 75vh;
     gap: 10px;
-    padding: 15px 0px 10px 0px;
+    padding: 25px 0px 10px 0px;
   }
   .hero-left {
     display: flex;
+    align-items: flex-end;
     flex: 1;
   }
 

@@ -248,6 +248,13 @@ a.button {
   height: 225px;
 }
 
+#dnd-spells {
+  background-image: url(./assets/dnd-spells-screenshot.PNG);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 #etch-a-sketch {
   background-image: url(./assets/etch-a-sketch-screenshot.PNG);
   background-size: cover;

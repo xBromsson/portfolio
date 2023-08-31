@@ -1,4 +1,4 @@
-# ✏️ Portfolio
+# 💼 Portfolio
 
 ![Static Badge](https://img.shields.io/badge/status%3A-stable-green)
 

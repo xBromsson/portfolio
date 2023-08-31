@@ -1,0 +1,34 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "My personal web developer portfolio of projects.",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "live-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xBromsson/portfolio.git"
+  },
+  "keywords": [
+    "Marvin",
+    "Brown",
+    "Web",
+    "Developer",
+    "Portfolio",
+    "JavaScript",
+    "HTML",
+    "CSS",
+    "React"
+  ],
+  "author": "Marvin Brown",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/xBromsson/portfolio/issues"
+  },
+  "homepage": "https://github.com/xBromsson/portfolio#readme",
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  }
+}

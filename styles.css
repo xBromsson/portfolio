@@ -255,6 +255,13 @@ a.button {
   background-position: center;
 }
 
+#inter {
+  background-image: url(./assets/screenshots/inter-screenshot.PNG);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 #etch-a-sketch {
   background-image: url(./assets/etch-a-sketch-screenshot.PNG);
   background-size: cover;
